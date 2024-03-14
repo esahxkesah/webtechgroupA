@@ -7,6 +7,7 @@ INFO 2032 Web Technologies Section 5
 
 Group A members
 | Name                             |  Matric No.|
+| -------------------------------- | -----------|
 | Nabilah Hakim binti Hazri        |  2013672   |
 | Nik Raeidi bin Nik Salimi        |  2013837   |
 | Nur Syafini binti Ismail         |  2018028   |
