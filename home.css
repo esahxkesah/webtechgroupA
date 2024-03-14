@@ -1,0 +1,305 @@
+.parent
+{
+  position: relative;
+  height: auto;
+  width:auto;
+}
+
+.body{
+  font-family: 'Poppins';
+}
+.websiteBorder
+{
+  background-color: #737373;
+  color: #ffffff;
+  height: 40px;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.content p{
+  color: white;
+  background-color:#787878;
+  padding: 10px;
+  border-radius: 35px;
+
+}
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 15s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+input {
+  float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;}
+ul {
+  position: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #737373;
+}
+
+li {
+  position: sticky;
+  float: right;
+}
+
+li a {
+  position: sticky;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  position: sticky;
+  background-color: grey;
+}
+
+.active {
+  position: sticky;
+  background-color: #4CAF50;
+}
+
+.boxContainer
+{
+  float:right;
+  margin: auto;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  border: 4px solid #737373;
+  padding: 0px 10px;
+  border-radius: 50px;
+
+}
+
+.elementContainer
+{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#searchBar
+{
+  float: inherit;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Poppins',sans-serif;
+  color: #424242;
+  font-weight: 500;
+}
+
+#searchBar:focus
+{
+  outline:none;
+}
+
+.material-icons
+{
+  font-size: 26px;
+  color: #737373;
+}
+
+.banner{
+background-image: url("banner.gif");
+min-height: 1000px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.banner p1 {
+position: sticky;
+top: 50%;
+left: 5%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: white;
+font-size: 50px;
+}
+.banner p2 {
+position: sticky;
+align-self: center;
+top: 65%;
+left: 5%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: white;
+font-size: 18px;
+}
+
+.banner .btn {
+justify-content: center;
+position: sticky ;
+top: 80%;
+left: 35%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: green;
+color: white;
+font-size: 20px;
+font-family:inherit;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+align-self: flex-end;
+}
+
+.banner .btn:hover {
+background-color: red;
+}
+
+
+.column {
+  font-family: 'Poppins';
+  float: left;
+  padding: 10px;
+  height: 400px;
+   /* Should be removed. Only for demonstration */
+}
+
+.left{
+  width: 15%
+  ;
+}
+
+.middle {
+  width: 45%;
+}
+
+.right{
+  margin-left: 5%;
+  font-family: sans-serif;
+  width: 25%;
+  padding:20px;
+  border-radius: 50px;
+  height: 490px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3{
+  font-size:27px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input.larger {
+  vertical-align: middle;
+              position: relative;
+              bottom: 1px;
+        width: 25px;
+        height: 25px;

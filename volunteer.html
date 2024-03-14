@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https:/fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <title>Good Food</title>
+    <link rel="stylesheet" type="text/css" href="volunteer.css">
+
+    <script type="text/javascript">
+
+      function submission()
+      {
+        alert("Your submission is successful! See you in the upcoming event :)");
+      }
+
+      function scrollUp()
+      {
+        document.documentElement.scrollTop = 0;
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <div class="parent">
+      <div class="row">
+
+        <div class="column">
+          <img src="logo.png" style="width:95px">
+          <img src="gfood.png" style="width:180px">
+
+          <div class="boxContainer">
+            <table class="elementContainer">
+              <tr>
+                <td>
+                  <input id="searchBar" type="text" placeholder="Search">
+                </td>
+                <td>
+                  <a href="#"><i class="material-icons">search</i></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p></p>
+
+      <ul class="websiteBorder">
+        <li><a href ="contactus.html">Contact</a></li>
+        <li><a class="active" href ="volunteer.html">Volunteer</a></li>
+        <li><a href ="donate.html">Donate</a></li>
+        <li><a href ="aboutus.html">About us</a></li>
+        <li><a href ="home.html">Home</a></li>
+      </ul>
+
+      <div class="mainPic">
+        <img src="Volunteers.jpg">
+        <p1><strong>Volunteer</strong></p1>
+        <p2>Come join us distributing the food to the people who need them</p2>
+      </div>
+
+      <div class="content">
+        <p1><strong>Join Us Now</strong></p1>
+        <p></p>
+        <video id="video" src="website-goodfood.mp4" autoplay controls></video>
+      </div>
+
+      <div class="formBox">
+
+        <p1>BECOME A VOLUNTEER</p1>
+
+        <div class="contentFormBox">
+
+         <form id="volunteer-form" action="volunteer.html" method="post">
+           <label for="first-name">First Name</label>
+           <br>
+           <input class="input-field" type="text" placeholder="John" name="user_fName" required>
+
+           <p></p>
+
+           <label for="last-name">Last Name</label>
+           <br>
+           <input class="input-field" type="text" placeholder="Doe" name="user_lName" required>
+
+           <p></p>
+
+           <label for="email">Email</label>
+           <br>
+           <input class="input-field" id="email" type="email" placeholder="Johndoe@email.com"name="user_email" required>
+
+           <p></p>
+
+           <label for="phoneNumber">Phone Number</label>
+           <br>
+           <input class="input-field" type="number" placeholder="0123456789" name="user_number" required>
+
+           <p></p>
+
+           <label for="roles">Roles</label>
+           <br>
+           <select name="roles" id="roles">
+             <option value="cook">Cook</option>
+             <option value="packer">Packer</option>
+             <option value="distributer">Distributer</option>
+             <option value="photographer">Photographer</option>
+             <option value="planner">Planner</option>
+           </select>
+
+           <p></p>
+
+           <input type="checkbox" id="inspection" required>
+            <label id="inspectionLabel" for="checkThis">I am not a robot</label>
+
+           <p></p>
+
+           <input class="btn" type="submit" onclick="submission()" value="Sign Up">
+         </div>
+
+        </form>
+
+     </div>
+
+     <div class="secondContentBlock">
+
+         <p1>Why Should You Volunteer?</p1>
+
+      <div class="secondContent">
+
+         <p></p>
+
+         <p2>GoodFood volunteering program has been going on for almost a decade since 2011. Our people have been doing their duties with the highest level of compassion,care and professionalism.</p2>
+
+         <p></p>
+
+         <p3>
+          By volunteering with us, you are helping to make, pack and distribute meals to thousands of people who are in need while helping us to end the hunger problems in Malaysia.
+          Your roles in this volunteer program can be varient from picking up food items, packing and redistributing. We are welcoming any volunteer that want to enhance their skills in any ways while help us to promote, create awereness and along with campaign on food collection for us.
+          We are very honoured to have these roles in our food volunteer program :
+         </p3>
+
+         <p></p>
+
+         <div class="bullet-box">
+           <ul>
+             <li id="one" data-tooltip="This person will manage and control on the flow of the event">Planner</li>
+             <li id="two" data-tooltip="This person will prepare the food">Cook</li>
+             <li id="third" data-tooltip="This person will help giving away the packed food to the people who need them">Distributer</li>
+             <li id="fourth" data-tooltip="This person will make sure the food are packed properly before giving them">Packer</li>
+             <li id="fifth" data-tooltip="This person will capture every important moments during the event and also make memories">Photographer</li>
+           </ul>
+         </div>
+
+      </div>
+
+     </div>
+
+     <div class="thirdContentBlock">
+
+       <p1>Volunteer Guidelines</p1>
+
+        <ul>
+          <li>Volunteers must be 18 years and above</li>
+          <li>17 years old and below must fill up a consent form by their parents</li>
+          <li>Volunteers must arrive early to avoid any distraction </li>
+          <li>Everyone must wear masks due to this covid-19 situation</li>
+          <li>Maintain 6 feet distance while working</li>
+          <li>Please dress for the appropriate occasion</li>
+        </ul>
+
+        <img id="guide-img" src="icon-guidelines.png">
+
+
+     </div>
+
+
+      <button id="goUp" type="button" name="back-to-top" onclick="scrollUp()">Back To Top</button>
+
+   </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+.parent
+{
+  position: relative;
+  height: 950px;
+  width: auto;
+  font-family: 'Poppins',sans-serif;
+}
+
+.websiteBorder
+{
+  background-color: #737373;
+  color: #ffffff;
+  height: 40px;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.boxContainer
+{
+  margin: auto;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  border: 4px solid #737373;
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+
+.elementContainer
+{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#searchBar
+{
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #424242;
+  font-weight: 500;
+}
+
+#searchBar:focus
+{
+  outline:none;
+}
+
+.material-icons
+{
+  font-size: 26px;
+  color: #737373;
+}
+
+.websiteBorder ul
+{
+  position: sticky;
+}
+
+.websiteBorder li
+{
+  position: sticky;
+  float: right;
+  list-style-type: none;
+}
+.websiteBorder li a
+{
+  position: sticky;
+  display: block;
+  color: white;
+  text-align:center;
+  padding: 8px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.websiteBorder li a:hover:not(.active) {
+  position: sticky;
+  background-color: grey;
+}
+.active {
+  position: sticky;
+  background-color: #4CAF50;
+}
+.header{
+  background-image: url(contact.png);
+  height: 250px;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+.contact-form{
+  width: 85;
+  max-width: 1000px;
+  background:#F7DC6F ;
+  top:50%;
+  left:50%;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+}
+.txtb{
+  border:1px solid black;
+  margin:8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  color:#333;
+  font-size: 14px;
+  text-transform:uppercase;
+}
+.txtb input,.txtb textarea{
+  width:100%;
+  border:none;
+  background:none;
+  outline:none;
+  font-size:18px;
+  margin-top:6px;
+}
+button{
+  display:inline-block;
+  background: #16A085;
+  padding: 14px 0;
+  color:white;
+  text-transform: uppercase;
+  cursor:pointer;
+  margin-top:8px;
+  width: 100%;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  align-items:center;
+  width:500px;
+  height: 280px;
+  text-align:center;
+  display: inline-block;
+  border-radius: 10px;
+  padding:15px 25px;
+  box-sizing: border-box;
+  cursor:pointer;
+  margin:10px 15px;
+  background-color: #58D68D ;
+}

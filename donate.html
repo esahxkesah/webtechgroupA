@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https:/fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="donate.css">
+  </head>
+  <body>
+    <div class="parent">
+      <div class="row">
+
+        <div class="column">
+          <img src="logo.png" style="width:95px">
+          <img src="gfood.png" style="width:180px">
+
+          <div class="boxContainer">
+            <table class="elementContainer">
+              <tr>
+                <td>
+                  <input id="searchBar" type="text" placeholder="Search">
+                </td>
+                <td>
+                  <a href="#"><i class="material-icons">search</i></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p></p>
+
+      <ul class="websiteBorder">
+        <li><a href ="contactus.html">Contact</a></li>
+        <li><a href ="volunteer.html">Volunteer</a></li>
+        <li><a class="active" href ="donate.html">Donate</a></li>
+        <li><a href ="aboutus.html">About us</a></li>
+        <li><a href ="home.html">Home</a></li>
+      </ul>
+
+<div class="main">
+    <div class="header">
+      <div class="title">
+
+      <center>
+        <hr style=width:250px;height:2px;color:white;background-color:white>
+        <h1><strong>Donation</strong></h1>
+        <hr style=width:250px;height:2px;color:white;background-color:white>
+      </center>
+
+    </div>
+    </div>
+
+    <div class="amount">
+
+      <h3 style="color: blue"> DONATION AMOUNT </h3>
+      <hr style="height:2px ;border-width:0;color:gray;background-color:gray;"align="left">
+      <br>
+
+      <div class="select">
+
+        <div class="rm">
+        <input class="amo selected" type="button" name="amount1" value="RM25">
+        <input class="amo" type="button" name="amount2" value="RM50">
+        <input class="amo" type="button" name="amount3" value="RM75">
+        <input class="amo" type="button" name="amount4" value="RM100">
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="profile">
+
+    <h3 style="color: blue"> PROFILE </h3>
+    <hr style="height:2px ;border-width:0;color:gray;background-color:gray;"align="left">
+    <br>
+    <div class="formBox">
+      <div class="contentFormBox">
+
+        <center>
+        <form id="myForm" class="donationform" action="donate.html" method="post" >
+
+         <table>
+
+          <tr>
+            <td>Name</td>
+            <td><input class="input-field" type="text" name=name required></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input class="input-field" type="email" name= email required></td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td><input class="input-field" type="number" name=phoneNum required></td>
+          </tr>
+          <tr>
+            <td>Card Holder Name</td>
+            <td><input class="input-field" type="text" name=cardName required></td>
+          </tr>
+          <tr>
+            <td>Credit Card Number</td>
+            <td><input class="input-field" type="number" name=cardNum required></td>
+          </tr>
+          <tr>
+            <td>Exp Date</td>
+            <td><input class="input-field-short" type="date" name=expdate required></td>
+          </tr>
+          <tr>
+            <td>CVV</td>
+            <td><input class="input-field-short" type="number" name=cvv min="100" max="999" required ></td>
+          </tr>
+        </table>
+
+          <center><input class="submit" type="submit" value="Submit"></center>
+
+        </form>
+        </center>
+      </div>
+    </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+
+    document.getElementById("myForm").onsubmit = function() {myFunction()};
+
+    function myFunction()
+    {
+    alert("Thank You For Your Kind Donation :)");
+    }
+
+
+    var amo = document.getElementsByClassName("amo");
+
+    var addSelectClass = function()
+    {
+    removeSelectClass();
+    this.classList.add('selected');
+    }
+
+    var removeSelectClass = function()
+    {
+    for (var i =0; i < amo.length; i++)
+    {
+      amo[i].classList.remove('selected')
+    }
+    }
+
+    for (var i =0; i < amo.length; i++)
+    {
+    amo[i].addEventListener("click",addSelectClass);
+    }
+    </script>
+
+  </body>
+</html>

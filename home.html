@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https:/fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+        <div class="parent">
+          <div class="row">
+
+            <div class="column">
+              <img src="logo.png" style="width:95px">
+              <img src="gfood.png" style="width:180px">
+
+
+      <div class="boxContainer">
+      <table class="elementContainer">
+        <tr>
+          <td>
+            <input id="searchBar" type="text" placeholder="Search">
+          </td>
+          <td>
+            <a href="#"><i class="material-icons">search</i></a>
+          </td>
+        </tr>
+      </table>
+        </div>
+<ul>
+<li><a href="contactus.html">Contact</a></li>
+<li><a href= "volunteer.html">Volunteer</a><li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="aboutus.html">About us</a></li>
+<li> <a class ="active" href="home.html">Home</a></li>
+</ul>
+
+<div class="news">
+<table>
+  <tr>
+    <td style="background-color: #F23131;padding: 5px;font-family:'Poppins'; color:white ;">
+      Flash News </td>
+    <td></td>
+    <td class="marquee" style="font-family:'Poppins'; padding: 5px; border:1.5px solid black;" >
+  <span>  --------  Volunteering recruitments have now been limited due to this pandemic season.  For more info, head to volunteer section.--------</span>
+</td>
+
+
+  </tr>
+</table>
+
+<div class="banner">
+  <button onClick="myOnClick()" class="btn"> <strong>How it works</strong></button>
+  <script>
+  function myOnClick(){
+    document.location.href= "howitworks.html";
+  }
+  </script>
+
+
+        <p1>  <strong> Sponsor a meal today. </strong> </p1> </marquee>
+      <p></p>
+        <p2> <em> GoodFood is committed to your well-being
+and efforts in our mutual mission to get surplus food to those in need.</em>  </p2>
+
+  </div>
+
+<h1 style="text-align:center;"> Food Waste and Lack of Nutritonal Value </h1>
+<div class="content">
+<p> Globally, more than 820 million people struggle with hunger every day. In Malaysia 3,000 tonnes of edible food is thrown away each day which is enough to provide 10 million meals.
+
+We rescue an average of 10 tonnes of good quality, surplus food per week from landfill. We are given this surplus food and other products by supermarkets, manufacturers and wholesale markets committed to reducing waste and feeding the less fortunate. With this rescued food we are able to provide an average of 33,000 meals a week for our charity partners and thousands of Malaysian’s living on or below the poverty line. </p>
+
+<p> Lost food is simply excess food; it is food that is in date, yet unwanted. There are many reasons why there is so much excess food, but what happens with that food next is what really matters.
+
+Food waste is a global problem. Around 30% of food that is produced in the world goes to waste. Globally, if food waste could be represented as its own country, it would be the third largest greenhouse gas emitter.
+
+Food over production leading to food waste is a huge challenge for our future and it is contributing to climate change in a devastating way. </p>
+
+<p> Another important takeaway for developing Asian countries is the spotlight on addressing nutritional poverty among the poor, the elderly and the disabled. In many countries of the region, people in the lower income groups are not destitute. They have homes and can afford food -- but they tend to eat fast food, which is cheap and filling yet lacks nutrition. Even in a developed economy it can sometimes be cheaper to buy a cheeseburger than a wholesome salad. </p>
+
+</div>
+
+  <div class="row">
+<p style="font-size:35px;"> How you can play the part<p>
+<div class="column left" style="background-color:white;">
+  <img src="Img_Money.PNG" style="width:150px;">
+  <img src="Img_Cook.PNG" style="width:150px;">
+  <img src="Img_Serve.PNG" style="width:150px;">
+</div>
+<div class="column middle" style="background-color:white;">
+  <h3> Step 1 </h3>
+      <hr style="height:2px ;border-width:0;color:gray;background-color:gray;"align="left">
+      <h3 style="color: green">                                Donate</h3>
+      <h3> Step 2 </h3>
+      <hr style="height:2px ;border-width:0;color:gray;background-color:gray;"align="left">
+      <h3 style="color: blue">                                 Cook</h3>
+      <h3> Step 3 </h3>
+      <hr style="height:2px ;border-width:0;color:gray;background-color:gray;"align="left">
+      <h3 style="color: red">                                 Serve</h3>
+</div>
+
+<div class="column right" style="background-color:#ededed;">
+
+  <h1 style=""> True or False: There is enough food in the world for everyone </h1>
+<table>
+  <tr>
+    <img src="sdg.png" style="width:130px; display:block;margin-left: auto; margin-right: auto;">
+  </tr>
+  <tr>
+    <td>
+  <label for="myCheck" style="font-size: 30px" align="center">True   </label>
+<input type="checkbox" id="trueCheck" onclick="TrueFunction()" class="larger" style="width:100px; display:block;margin-left: auto; margin-right: auto;">
+</td>
+</tr>
+<tr>
+  <td>
+<label for="myCheck" style="font-size: 30px" align="center">False</label>
+<input type="checkbox" id="myCheck" onclick="FalseFunction()" class="larger"  style="width:100px; display:block;margin-left: auto; margin-right: auto;">
+</td>
+</tr>
+
+<p id="text" style="background-color: yellow;display:none"><em> The statement is true! There is enough food today for everyone to have the nourishment needed for a healthy and pro-ductive life. The problem is access. </em></p>
+
+<script>
+
+function TrueFunction() {
+  var checkBox = document.getElementById("trueCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+function FalseFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+
+  }
+}
+
+  </script>
+
+
+
+  </body>
+  </html>
+
+
+
+
+
+</div>
+
+
+</div>
+
+  </body>
+
+</html>
