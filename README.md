@@ -18,7 +18,7 @@ Group A members
 
 ### Project Description
 
-The theme we have chosen for this project is Food and Beverage. For this particular task our group has come to an agreement to start a mock organisation. GoodFood is a non-profit organization which aims to distribute nutritious food for those in need. In relation to Sustainable Goal Development, Goal 2: Zero Hunger, we have decided to create a platform where everyone is able to help with our cause as our motto is “to care is to share”.
+	The theme we have chosen for this project is Food and Beverage. For this particular task our group has come to an agreement to start a mock organisation. GoodFood is a non-profit organization which aims to distribute nutritious food for those in need. In relation to Sustainable Goal Development, Goal 2: Zero Hunger, we have decided to create a platform where everyone is able to help with our cause as our motto is “to care is to share”.
 
 	Our website consists of five main pages which are home, about us, donate, volunteer and contact. We have chosen three main fonts which are poppins, open sans and league spartan. The whole concept for this website is minimalist yet fresh and straight-to-the-point for easy navigation to all users. The background colour is white and the elements used are colourized with colours like red, blue, yellow, and green for an extra pop of colour.
 
